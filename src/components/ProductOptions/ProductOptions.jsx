@@ -11,7 +11,7 @@ const ProductOptions = ({ productPromise }) => {
     const handleAddToCart = (product) => {
         setCartItems(prev => {
             const exists = prev.find(item => item.id === product.id);
-            if (exists) return prev; // avoid duplicates
+            if (exists) return prev; 
             return [...prev, product];
         });
         setCurrentPage('cart');
@@ -43,25 +43,19 @@ const ProductOptions = ({ productPromise }) => {
                     Cart ({cartItems.length})
                 </button>
             </div>
-
-            {/* <div className='grid grid-cols-1  gap-5 mt-5 lg:grid-cols-3 '> */}
-
-            {/* // productData.map( product => <ProductCard key={product.id} product ={product}></ProductCard>) */}
             {currentPage === 'products' && (
                 <div className='grid grid-cols-1 gap-5 mt-5 lg:grid-cols-3'>
                     {productData.map(product => (
-                        <ProductCard
-                            key={product.id}
+                        <ProductCard  key={product.id}
                             product={product}
-                            onAddToCart={handleAddToCart}
-                        />
+                            onAddToCart={handleAddToCart}></ProductCard>
+                           
+                        
                     ))}
                 </div>
             )}
 
-            {currentPage === 'cart' && (<CartPage cartItems={cartItems} />)}
-
-            {/* </div> */}
+            {currentPage === 'cart' && (<CartPage cartItems={cartItems}></CartPage>)}
         </div>
     );
 };

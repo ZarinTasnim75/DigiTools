@@ -9,7 +9,7 @@
     "tagType": "popular",
     "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
     "icon": "FaFileAlt",
-    "image": "/public/products/writing_23274001.png"
+    "image": "/products/writing_23274001.png"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "tagType": "new",
     "features": ["2000+ templates", "Monthly Updates", "Commercial license"],
     "icon": "FaInstagram",
-    "image": ""
+    "image": "/products/design-tool.png"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "tagType": "best seller",
     "features": ["10M+ assets", "Commercial use", "No attribution"],
     "icon": "FaChartLine",
-    "image": ""
+    "image": "/products/shopping-cart.png"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "tagType": "popular",
     "features": ["50+ automations", "API access", "Custom workflows"],
     "icon": "FaPalette",
-    "image": ""
+    "image": "/products/operation.png"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "tagType": "new",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
     "icon": "FaPenNib",
-    "image": ""
+    "image": "/products/portfolio.png"
   },
   {
     "id": 6,
@@ -69,6 +69,6 @@
     "tagType": "best seller",
     "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
     "icon": "FaTasks",
-    "image": ""
+    "image": "/products/social-media.png"
   }
 ]
