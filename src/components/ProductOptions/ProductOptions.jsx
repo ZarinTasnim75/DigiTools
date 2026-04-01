@@ -11,7 +11,7 @@ const ProductOptions = ({ productPromise }) => {
     const handleAddToCart = (product) => {
         setCartItems(prev => {
             const exists = prev.find(item => item.id === product.id);
-            if (exists) return prev; 
+            if (exists) return prev;
             return [...prev, product];
         });
         setCurrentPage('cart');
@@ -20,6 +20,15 @@ const ProductOptions = ({ productPromise }) => {
     const handlePageSwitch = (page) => {
         setCurrentPage(page);
     };
+
+    const handleRemoveItem = (id) => {
+        setCartItems(prev => prev.filter(item => item.id !== id));
+    };
+
+    const handleCheckout = () => {
+        setCartItems([]); 
+    };
+
 
     return (
         <div className='text-center m-20'>
@@ -46,16 +55,15 @@ const ProductOptions = ({ productPromise }) => {
             {currentPage === 'products' && (
                 <div className='grid grid-cols-1 gap-5 mt-5 lg:grid-cols-3'>
                     {productData.map(product => (
-                        <ProductCard  key={product.id}
+                        <ProductCard key={product.id}
                             product={product}
                             onAddToCart={handleAddToCart}></ProductCard>
-                           
-                        
                     ))}
                 </div>
             )}
 
-            {currentPage === 'cart' && (<CartPage cartItems={cartItems}></CartPage>)}
+            {currentPage === 'cart' && (<CartPage cartItems={cartItems} onRemoveItem={handleRemoveItem}
+        onCheckout={handleCheckout}></CartPage>)}
         </div>
     );
 };

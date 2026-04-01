@@ -8,7 +8,6 @@ import React from 'react';
 
 
 const ProductCard = ({ product, onAddToCart }) => {
-    console.log(product)
    
     const tagStyle = tagStylee[product.tag] ;
 
@@ -32,7 +31,7 @@ const ProductCard = ({ product, onAddToCart }) => {
                         </li>
                     ))}
                 </ul>
-                <div className="mt-6">
+                <div className="mt-auto">
                     <button onClick={() => onAddToCart(product)} className="btn bg-gradient-to-r from-blue-700 to-purple-500 text-white rounded-4xl w-full">
                         Buy Now
                     </button>
@@ -41,5 +40,4 @@ const ProductCard = ({ product, onAddToCart }) => {
         </div>
     );
 };
-
 export default ProductCard;
