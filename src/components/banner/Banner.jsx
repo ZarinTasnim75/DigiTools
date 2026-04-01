@@ -1,5 +1,6 @@
 import React from "react";
 import banner from "./banner.png";
+import play from './Play.png';
 
 const Banner = () => {
   return (
@@ -19,6 +20,7 @@ const Banner = () => {
             Explore Products
           </button>
           <button className="btn btn-outline btn-primary rounded-4xl ml-2">
+            <img src={play} alt="logo" className="w-4 h-4" />
             Watch Demo
           </button>
         </div>

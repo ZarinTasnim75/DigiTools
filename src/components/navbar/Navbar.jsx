@@ -3,7 +3,7 @@ import cart from './shopping-cart.png';
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100 shadow-xsm">
+        <div className="navbar bg-base-100 shadow-xsm px-15">
             <div className="navbar-start">
 
                 <h4 className='text-purple-600 font-bold text-2xl'>DigiTools</h4>
