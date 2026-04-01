@@ -6,6 +6,8 @@ import { Suspense } from 'react'
 import ProductOptions from './components/ProductOptions/ProductOptions'
 import Features from './components/Features/Features'
 import Pricing from './components/Pricing/Pricing'
+import Stamp from './components/Stamp/Stamp'
+import Footer from './components/Foot/Footer'
 
 const productPromise =fetch('ProductData.json').then(res => res.json())
 
@@ -27,6 +29,10 @@ function App() {
       <Features></Features>
       <Pricing></Pricing>
      </section>
+     <footer>
+      <Stamp></Stamp>
+      <Footer></Footer>
+     </footer>
     </>
   )
 }
