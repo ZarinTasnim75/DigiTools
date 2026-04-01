@@ -7,7 +7,7 @@ import React from 'react';
    };
 
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, onAddToCart }) => {
     console.log(product)
    
     const tagStyle = tagStylee[product.tag] ;
@@ -33,7 +33,7 @@ const ProductCard = ({ product }) => {
                     ))}
                 </ul>
                 <div className="mt-6">
-                    <button className="btn bg-gradient-to-r from-blue-700 to-purple-500 text-white rounded-4xl w-full">
+                    <button onClick={() => onAddToCart(product)} className="btn bg-gradient-to-r from-blue-700 to-purple-500 text-white rounded-4xl w-full">
                         Buy Now
                     </button>
                 </div>
