@@ -1,5 +1,4 @@
 import React from 'react';
-
 const CartPage = ({ cartItems, onRemoveItem, onCheckout }) => {
     if (cartItems.length === 0) {
         return <p className="mt-10 text-gray-500">Your cart is empty!</p>;
